@@ -31,8 +31,28 @@ class ModelConstructor
   end
 
   def create_rows
-    @data['I.'].each do |column, value|
-      Row.create(number: value) unless column == 'columnName'
+    @data['I.'].each do |row, value|
+      Row.create(number: value) unless row == 'columnName'
+    end
+  end
+
+  def create_correspondence_from_column_contents(column_contents, current_column)
+    column_contents.each do |row, correspondence|
+      next if row == 'columnName'
+      correspondence = 'VALUE EMPTY' if correspondence == ''
+      current_row = Row.find_by(number: row)
+      Correspondence.create(
+        value: correspondence,
+        column: current_column,
+        row: current_row
+      )
+    end
+  end
+
+  def pass_columns_in_correspondence_generator
+    @data.each do |column, value|
+      current_column = Column.find_by(roman_numeral: column)
+      create_correspondence_from_column_contents(value, current_column)
     end
   end
 end
