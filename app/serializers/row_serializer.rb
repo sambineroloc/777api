@@ -2,6 +2,6 @@
 
 # Serializes rows
 class RowSerializer < ActiveModel::Serializer
-  attributes :id, :number
+  attributes :number
   has_many :correspondences
 end
