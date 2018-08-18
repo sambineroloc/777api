@@ -54,7 +54,9 @@ class ModelConstructor
       Correspondence.create(
         value: correspondence,
         column: current_column,
-        row: current_row
+        row: current_row,
+        column_pointer: current_column.title,
+        row_pointer: current_row.number
       )
     end
   end

@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 namespace :setup do
+  desc 'Clears all models'
+  task clear_all: :environment do
+    ModelConstructor.instance.clear_all_models
+  end
   desc 'Runs column constructor'
   task create_columns: :environment do
     constructor = ModelConstructor.instance
@@ -20,5 +24,5 @@ namespace :setup do
   end
 
   desc 'Runs all tasks'
-  task all: %i[create_columns create_rows create_correspondences]
+  task all: %i[clear_all create_columns create_rows create_correspondences]
 end

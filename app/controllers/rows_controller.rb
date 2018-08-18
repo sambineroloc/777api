@@ -9,6 +9,6 @@ class RowsController < ApplicationController
 
   def show
     @row = Row.find_by(query_param: params[:id].to_i)
-    render json: @row.to_json(:include => :correspondences)
+    render json: @row
   end
 end

@@ -7,6 +7,8 @@ class CreateCorrespondences < ActiveRecord::Migration[5.2]
       t.string :value
       t.integer :column_id
       t.integer :row_id
+      t.string :row_pointer
+      t.string :column_pointer
 
       t.timestamps
     end
