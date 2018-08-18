@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 RSpec.describe ModelConstructor, type: :model do
-  let(:json) { JSON.parse(File.read('public/assets/column_and_row_map.json')) }
+  let(:json) { JSON.parse(File.read('public/assets/liber777.json')) }
   let(:name_map) do
     JSON.parse(File.read('public/assets/column_and_row_map.json'))
   end
