@@ -55,4 +55,8 @@ class ModelConstructor
       create_correspondence_from_columns(value, current_column)
     end
   end
+
+  def clear_all_models
+    Column.delete_all && Row.delete_all && Correspondence.delete_all
+  end
 end
