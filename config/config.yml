@@ -1,0 +1,13 @@
+defaults: &defaults
+  column_count: 189
+  row_count: 35
+  correspondence_count: 3277
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
