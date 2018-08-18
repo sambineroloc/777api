@@ -33,20 +33,4 @@ describe 'rake setup:create_correspondences', type: :task do
     task.execute
     expect(Correspondence.all.length).to eq(TABLE_DATA['correspondence_count'])
   end
-
-  describe 'rake setup:clear_all', type: :task do
-    it 'preloads the Rails environment' do
-      expect(task.prerequisites).to include 'environment'
-    end
-
-    it 'deletes all models' do
-      tasks['setup:create_columns'].execute
-      tasks['setup:create_rows'].execute
-      tasks['setup:create_correspondences'].execute
-      task.execute
-      expect(Column.all.length).to eq(0)
-      expect(Row.all.length).to eq(0)
-      expect(Correspondence.all.length).to eq(0)
-    end
-  end
 end
