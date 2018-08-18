@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe Row, type: :model do
-  subject { described_class.new(number: 1) }
+  subject { described_class.new(number: '1') }
 
   context 'when saving' do
     it 'is valid with valid attributes' do
