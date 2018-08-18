@@ -3,8 +3,8 @@
 # Controls queries for rows
 class RowsController < ApplicationController
   def index
-    @rows = Row.all.select %w[id number query_param]
-    render json: @rows.to_json
+    @rows = Row.all
+    render json: @rows
   end
 
   def show
