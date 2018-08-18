@@ -1,23 +1,24 @@
 require 'rails_helper'
 
 RSpec.describe Column, type: :model do
+  subject { described_class.new(title: 'Some weird stuff', roman_numeral: 'I') }
+
   context 'when saving' do
     it 'is valid with valid attributes' do
-      column = Column.new(title: 'Some weird stuff', roman_numeral: 'I')
-      column.save
-      expect(column).to be_valid
+      subject.save
+      expect(subject).to be_valid
     end
 
     it 'validates presence of title' do
-      column = Column.new(roman_numeral: 'I')
-      column.save
-      expect(column).to_not be_valid
+      subject.title = nil
+      subject.save
+      expect(subject).to_not be_valid
     end
 
     it 'validates presence of roman numeral' do
-      column = Column.new(title: 'Some weird stuff')
-      column.save
-      expect(column).to_not be_valid
+      subject.roman_numeral = nil
+      subject.save
+      expect(subject).to_not be_valid
     end
   end
 end
