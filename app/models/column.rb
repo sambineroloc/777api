@@ -3,7 +3,7 @@
 # Columns represent the different types of available data
 class Column < ApplicationRecord
   validates :title, presence: true
-  validates :roman_numeral, presence: true
+  validates :roman_numeral, presence: true, uniqueness: true
 
   has_many :correspondences
 end
