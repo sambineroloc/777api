@@ -19,6 +19,6 @@ module LiberSevenApi
   class Application < Rails::Application
     config.load_defaults 5.2
     config.api_only = true
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{config.root}/lib/modules)
   end
 end
