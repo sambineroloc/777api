@@ -17,8 +17,6 @@ namespace :setup do
   task create_correspondences: :environment do
     constructor = ModelConstructor.instance
     constructor.pass_columns_in_correspondence_generator
-    correspondence_count = Correspondence.all.length
-    puts "#{correspondence_count} / 3277 Rows Created"
   end
 
   desc 'Runs all tasks'
