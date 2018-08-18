@@ -20,5 +20,16 @@ RSpec.describe Column, type: :model do
       subject.save
       expect(subject).to_not be_valid
     end
+
+    it 'validates uniqueness of roman numeral' do
+      subject.save
+      duplicate_column = described_class.new(
+        title: 'fake title',
+        roman_numeral: 'I'
+      )
+      duplicate_column.save
+      expect(subject).to be_valid
+      expect(duplicate_column).to_not be_valid
+    end
   end
 end
