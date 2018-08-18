@@ -1,5 +1,9 @@
+# frozen_string_literal: true
+
 require 'singleton'
 
+# This class reads data from json assets and uses the data to construct
+# models for querying
 class ModelConstructor
   include Singleton
 

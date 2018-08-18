@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Migration to create columns
 class CreateColumns < ActiveRecord::Migration[5.2]
   def change
     create_table :columns do |t|
