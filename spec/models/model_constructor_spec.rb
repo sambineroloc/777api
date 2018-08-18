@@ -26,7 +26,8 @@ RSpec.describe ModelConstructor, type: :model do
 
     it 'makes rows correctly' do
       subject.create_rows
-      expect(Row.all.length).to eq(json['I.'][1..-1].length)
+      length_of_used_rows = json['I.'].length - 1
+      expect(Row.all.length).to eq(length_of_used_rows)
     end
   end
 end
