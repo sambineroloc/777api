@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Controls the response in column requests
 class ColumnsController < ApplicationController
   def index
     @columns = Column.all

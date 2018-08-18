@@ -8,3 +8,6 @@ AllCops:
 
 Layout/LeadingCommentSpace:
   Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
