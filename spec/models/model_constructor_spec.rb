@@ -4,9 +4,9 @@ RSpec.describe ModelConstructor, type: :model do
   let(:name_map) do
     JSON.parse(File.read('public/assets/column_and_row_map.json'))
   end
-  let(:desired_number_of_columns) { 189 }
-  let(:desired_number_of_rows) { 35 }
-  let(:desired_number_of_correspondences) { 3277 }
+  let(:desired_number_of_columns) { TABLE_DATA['column_count'] }
+  let(:desired_number_of_rows) { TABLE_DATA['row_count'] }
+  let(:desired_number_of_correspondences) { TABLE_DATA['correspondence_count'] }
   subject { described_class.instance }
 
   context 'when initialized' do
