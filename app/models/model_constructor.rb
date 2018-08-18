@@ -1,6 +1,6 @@
 require 'singleton'
 
-class JsonTranslator
+class ModelConstructor
   include Singleton
 
   attr_accessor :data

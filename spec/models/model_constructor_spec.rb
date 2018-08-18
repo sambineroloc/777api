@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe JsonTranslator, type: :model do
+RSpec.describe ModelConstructor, type: :model do
   subject { described_class.instance }
 
   context 'when initialized' do
