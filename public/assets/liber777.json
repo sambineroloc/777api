@@ -39,11 +39,7 @@
   },
   "II.*": {
     "columnName": "Hebrew Names of Numbers and Letters",
-    "0": [
-      "Ain",
-      "Ain Soph",
-      "Ain Soph Aur"
-    ],
+    "0": "Ain, Ain Soph, Ain Soph Aur",
     "1": "Kether",
     "2": "Chokmah",
     "3": "Binah",
@@ -81,11 +77,7 @@
   },
   "III.": {
     "columnName": "English of Col. II.",
-    "0": [
-      "Nothing",
-      "No Limit",
-      "Limitless L.V.X."
-    ],
+    "0": "Nothing, No Limit, Limitless L.V.X.",
     "1": "Crown",
     "2": "Wisdom",
     "3": "Understanding",
@@ -845,11 +837,7 @@
   },
   "XXIII.*": {
     "columnName": "The Forty Buddhist Meditations",
-    "0": [
-      "Nothing and Neither P no p'",
-      "Space",
-      "Consciousness"
-    ],
+    "0": "Nothing and Neither P no p, Space, Consciousness",
     "1": "Indifference S",
     "2": "Joy S",
     "3": "Compassion S",
@@ -860,14 +848,8 @@
     "8": "Analysis into 4 ",
     "9": "Elements A ",
     "10": "Dhamma R ",
-    "11": [
-      "Shanga",
-      "The Body"
-    ],
-    "12": [
-      "Shanga",
-      "The Body"
-    ],
+    "11": "Shanga, The Body",
+    "12": "Shanga, The Body",
     "13": "Wind K ",
     "14": "Yellow K",
     "15": "Loathsomeness of Food P",
@@ -893,11 +875,7 @@
   },
   "XXIV.": {
     "columnName": "Certain of the Hindu and Buddhist Results",
-    "0": [
-      "Nerodha-samapatti",
-      "Nirvikalpa-samadhi",
-      "Shiva-darshana"
-    ],
+    "0": "Nerodha-samapatti, Nirvikalpa-samadhi, Shiva-darshana",
     "1": "Unity with Brahma, Atma-darshana",
     "2": "...",
     "3": "...",
@@ -1315,25 +1293,13 @@
   },
   "CLXXXVII.": {
     "columnName": "Magical Formulæ (see Col. XLI)",
-    "0": [
-      "LASTAL",
-      "M....M"
-    ],
+    "0": "LASTAL, M....M",
     "1": "..........",
     "2": "VIAOV",
-    "3": [
-      "BABALON",
-      "VITRIOL"
-    ],
+    "3": "BABALON, VITRIOL",
     "4": "IHVH",
-    "5": [
-      "AGLA",
-      "ALHIM"
-    ],
-    "6": [
-      "ABRAHADABRA",
-      "IAO:INRI"
-    ],
+    "5": "AGLA, ALHIM",
+    "6": "ABRAHADABRA, IAO:INRI",
     "7": "ARARITA",
     "8": "..........",
     "9": "ALIM",

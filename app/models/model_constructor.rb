@@ -25,14 +25,24 @@ class ModelConstructor
   def create_columns
     @data.each do |column, value|
       title = value['columnName']
+      query_param = ModelConstructor.instance.name_map['columns'][column]
       roman_numeral = column
-      Column.create(title: title, roman_numeral: roman_numeral)
+      Column.create(
+        title: title,
+        roman_numeral: roman_numeral,
+        query_param: query_param
+      )
     end
   end
 
   def create_rows
     @data['I.'].each do |row, value|
-      Row.create(number: value) unless row == 'columnName'
+      query_param = ModelConstructor.instance.name_map['rows'][row]
+      next if row == 'columnName'
+      Row.create(
+        number: value,
+        query_param: query_param
+      )
     end
   end
 

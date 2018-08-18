@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2018_08_18_035232) do
   create_table "columns", force: :cascade do |t|
     t.string "title"
     t.string "roman_numeral"
+    t.integer "query_param"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 2018_08_18_035232) do
 
   create_table "rows", force: :cascade do |t|
     t.string "number"
+    t.integer "query_param"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
