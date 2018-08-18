@@ -23,10 +23,16 @@ class ModelConstructor
   end
 
   def create_columns
-    @data.each do |key, value|
+    @data.each do |column, value|
       title = value['columnName']
-      roman_numeral = key
+      roman_numeral = column
       Column.create(title: title, roman_numeral: roman_numeral)
+    end
+  end
+
+  def create_rows
+    @data['I.'].each do |column, value|
+      Row.create(number: value) unless column == 'columnName'
     end
   end
 end

@@ -4,7 +4,7 @@
 class CreateRows < ActiveRecord::Migration[5.2]
   def change
     create_table :rows do |t|
-      t.integer :number
+      t.string :number
 
       t.timestamps
     end
