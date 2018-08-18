@@ -1,8 +1,4 @@
-# rubocop:disable Style/FrozenStringLiteralComment
-
-# rubocop:disable Layout/LeadingCommentSpace
 #!/usr/bin/env ruby
-# rubocop:enable Layout/LeadingCommentSpace
 begin
   load File.expand_path('spring', __dir__)
 rescue LoadError => e
@@ -11,4 +7,3 @@ end
 APP_PATH = File.expand_path('../config/application', __dir__)
 require_relative '../config/boot'
 require 'rails/commands'
-# rubocop:enable Style/FrozenStringLiteralComment
