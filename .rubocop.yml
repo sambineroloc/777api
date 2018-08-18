@@ -4,6 +4,7 @@ AllCops:
     - 'config/**/*'
     - 'script/**/*'
     - 'bin/**/*'
+    - 'spec/**/*'
 
 Layout/LeadingCommentSpace:
   Enabled: false

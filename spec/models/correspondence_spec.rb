@@ -1,7 +1,4 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
-# rubocop:disable Metrics/BlockLength
 RSpec.describe Correspondence, type: :model do
   let(:column) { Column.new(title: 'Some weird stuff', roman_numeral: 'I') }
   let(:row) { Row.new(number: 1) }
@@ -38,4 +35,3 @@ RSpec.describe Correspondence, type: :model do
     end
   end
 end
-# rubocop:enable Metrics/BlockLength

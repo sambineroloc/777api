@@ -36,7 +36,7 @@ class ModelConstructor
     end
   end
 
-  def create_correspondence_from_column_contents(column_contents, current_column)
+  def create_correspondence_from_columns(column_contents, current_column)
     column_contents.each do |row, correspondence|
       next if row == 'columnName'
       correspondence = 'VALUE EMPTY' if correspondence == ''
@@ -52,7 +52,7 @@ class ModelConstructor
   def pass_columns_in_correspondence_generator
     @data.each do |column, value|
       current_column = Column.find_by(roman_numeral: column)
-      create_correspondence_from_column_contents(value, current_column)
+      create_correspondence_from_columns(value, current_column)
     end
   end
 end
