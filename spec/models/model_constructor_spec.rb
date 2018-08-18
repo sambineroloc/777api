@@ -36,5 +36,15 @@ RSpec.describe ModelConstructor, type: :model do
       subject.pass_columns_in_correspondence_generator
       expect(Correspondence.all.length).to eq(desired_number_of_correspondences)
     end
+
+    it 'deletes all models' do
+      subject.create_columns
+      subject.create_rows
+      subject.pass_columns_in_correspondence_generator
+      subject.clear_all_models
+      expect(Column.all.length).to eq(0)
+      expect(Row.all.length).to eq(0)
+      expect(Correspondence.all.length).to eq(0)
+    end
   end
 end

@@ -6,6 +6,7 @@ require File.expand_path('../config/environment', __dir__)
 prod_check = Rails.env.production?
 abort('The Rails environment is running in production mode!') if prod_check
 require 'rspec/rails'
+require 'support/tasks.rb'
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
