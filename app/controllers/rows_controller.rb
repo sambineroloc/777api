@@ -10,7 +10,7 @@ class RowsController < ApplicationController
   def show
     if params[:column]
       row = Row.find_by(query_param: params[:id].to_i)
-      column = Column.find_by(query_param:  params[:column])
+      column = Column.find_by(query_param: params[:column])
       @row = row.correspondences.find_by(column: column)
     else
       @row = Row.find_by(query_param: params[:id].to_i)
