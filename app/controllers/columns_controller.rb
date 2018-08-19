@@ -8,13 +8,15 @@ class ColumnsController < ApplicationController
   end
 
   def show
-    if params[:row]
-      row = Row.find_by(query_param: params[:row])
-      column = Column.find_by(query_param: params[:id].to_i)
-      @column = column.correspondences.find_by(row: row)
-    else
-      @column = Column.find_by(query_param: params[:id].to_i)
-    end
+    @row = check_for_query_params
+    @column = Column.find_by(query_param: params[:id].to_i)
+    @column = @column.correspondences.find_by(row: @row) unless @row.nil?
     render json: @column
+  end
+
+  private
+
+  def check_for_query_params
+    Row.find_by(query_param: params[:row]) if params[:row]
   end
 end
