@@ -2,11 +2,11 @@ LIBER 777 Queryable API
 
 Setup
   Needs
-    * Ruby v2.5.1
-    * Rails v5.2.0
-    * Postman/ Curl/ some other way to make get requests
-    * Postgres database
-    * Rspec
+    - Ruby v2.5.1\n
+    - Rails v5.2.0\n
+    - Postman/ Curl/ some other way to make get requests\n
+    - Postgres database\n
+    - Rspec\n
 
   Steps
     1. Install the programs detailed above
