@@ -31,7 +31,7 @@ Setup
       - /rows, /rows/1, and /rows/1?column=4 will work in the same manner, and
       query data can be found in the same location  
 
-  Notes
+  Notes  
     - This is my first attempt at this, and I've only posted the link in
     r/occult so far. If you have any feedback or suggestions, please let me
     know. The feedback is extremely welcome!  
