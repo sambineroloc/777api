@@ -6,7 +6,7 @@ FactoryBot.define do
     "#{n}"
   end
   sequence :query_param do |n|
-    n
+    "#{n}"
   end
 
   factory :column do

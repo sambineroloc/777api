@@ -1,15 +1,15 @@
 require 'rails_helper'
 
-describe 'GET /columns', :type => :request do
-  let!(:columns) { create(:column) }
+describe 'GET /rows', :type => :request do
+  let!(:rows) { create(:row) }
 
-  before { get '/columns' }
+  before { get '/rows' }
 
   it 'returns HTTP status 200' do
     expect(response).to have_http_status 200
   end
 
-  it 'returns all columns' do
+  it 'returns all rows' do
     body = JSON.parse(response.body)
 
     expect(body.count).to eq(1)
@@ -17,16 +17,16 @@ describe 'GET /columns', :type => :request do
   end
 end
 
-describe 'GET /columns/:id', :type => :request do
-  let!(:column) { create(:column) }
+describe 'GET /rows/:id', :type => :request do
+  let!(:row) { create(:row) }
 
-  before { get "/columns/#{column.query_param}" }
+  before { get "/rows/#{row.query_param}" }
 
   it 'returns HTTP status 200' do
     expect(response).to have_http_status 200
   end
 
-  it 'returns one column' do
+  it 'returns one row' do
     body = JSON.parse(response.body)
     expect(body.count).to eq(2)
     expect(body['correspondences']).to eq([])
