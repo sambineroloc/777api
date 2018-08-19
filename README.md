@@ -8,15 +8,15 @@ Setup
     - Postgres database  
     - Rspec  
 
-  Steps  
-    1. Install the programs detailed above  
-    2. git clone this repository  
-    3. cd into the directory  
+  Steps   
+    1. git clone this repository  
+    2. cd into the directory  
+    3. Install the programs detailed above
     4. run the following from the command line:  
       - bundle install  
       - rails db:create && rails db:migrate  
       - rake setup:all (this one may take a minute)  
-      - rspec  
+      - rspec (also might take a minute)
     5. If rspec goes green, you're good to go!  
 
   Usage  
