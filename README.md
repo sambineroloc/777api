@@ -36,4 +36,4 @@ Setup
     r/occult so far. If you have any feedback or suggestions, please let me
     know. The feedback is extremely welcome!
     - Shout out to Github user aj07mm for the spectacular JSON formatted LIBER
-    777 which allowed this to be so quick. 
+    777 which allowed this to be up and running so quick. 
