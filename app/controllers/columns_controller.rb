@@ -8,7 +8,13 @@ class ColumnsController < ApplicationController
   end
 
   def show
-    @column = Column.find_by(query_param: params[:id].to_i)
+    if params[:row]
+      row = Row.find_by(query_param: params[:row])
+      column = Column.find_by(query_param: params[:id].to_i)
+      @column = column.correspondences.find_by(row: row)
+    else
+      @column = Column.find_by(query_param: params[:id].to_i)
+    end
     render json: @column
   end
 end
