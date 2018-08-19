@@ -2,11 +2,11 @@ LIBER 777 Queryable API
 
 Setup
   Needs
-    - Ruby v2.5.1
-    - Rails v5.2.0
-    - Postman/ Curl/ some other way to make get requests
-    - Postgres database
-    - Rspec
+    * Ruby v2.5.1
+    * Rails v5.2.0
+    * Postman/ Curl/ some other way to make get requests
+    * Postgres database
+    * Rspec
 
   Steps
     1. Install the programs detailed above
@@ -36,4 +36,4 @@ Setup
     r/occult so far. If you have any feedback or suggestions, please let me
     know. The feedback is extremely welcome!
     - Shout out to Github user aj07mm for the spectacular JSON formatted LIBER
-    777 which allowed this to be up and running so quick. 
+    777 which allowed this to be up and running so quick.
